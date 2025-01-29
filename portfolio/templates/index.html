@@ -28,11 +28,11 @@
              <div class="container" id="social">
               <h6 style="color: blue;">Connect With ME!</h6>
               <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-solid fa-x"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/SajanVPrince"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.facebook.com/share/1EhKVNeqU5/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/sajan.v.prince?igsh=bHUyYnN2ajVqYzYy"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://x.com/SAJANVPRINCE3?s=08"><i class="fa-solid fa-x"></i></a>
+                  <a href="https://www.linkedin.com/in/sajan-v-prince-294154331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
               </div>
           </div>
       </div>
@@ -62,7 +62,7 @@
             </tr>
           </tbody>
         </table>
-        <a href="" class="btn btn-outline-warning">Download Resume</a>
+        <a href="{{ url_for('static', filename='img/resume.pdf') }}" class="btn btn-outline-warning">Download Resume</a>
       </div>
 
       <div class="container mt-5">
@@ -86,11 +86,23 @@
           </div>
         </div>
       </div>
-
-      <div class="container">
-        
-      </div>
-
+      <div class="container mt-5">
+      <div class="row " id="prj">
+        <div class="col-md-12 text-center">
+            <h2>Projects</h2>
+        </div>
+                <div class="col-lg-4">
+                <div class="card card-custom">
+                    <img src="{{url_for('static',filename='img/bookmart.jfif')}}" alt="Image" class="card-img-top">
+                    <div class="card-body card-body-custom">
+                    <h5 class="card-title card-title-custom">Bookmart</h5>
+                    <p class="card-text card-text-custom">A website developed to buy books and seel books you owned.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
       <div id="contact" class="contact">
         <div class="container mt-5">
             <h2>Contact Me</h2>
