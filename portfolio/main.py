@@ -11,3 +11,5 @@ def home():
 @app.route('/home/')   #Path of the function
 def home1():
     return render_template('index.html')
+
+app.run(debug=True)
